@@ -1,10 +1,10 @@
-    
+
 const nome = document.querySelector("#nome")
 const email = document.querySelector("#email")
 const select = document.querySelector("#servico")
 const msg = document.querySelector(".msg")
-const numero = +5599992155967
-let valor= 0
+const numero = '5599992155967'
+
 
 function orcamento() {
     document.querySelector(".endereco").scrollIntoView({
@@ -31,11 +31,11 @@ Opções principais:
 "nearest" → posição mais próxima*/
 
 function mensag() {
-const mensagem = 
-    `Nome: ${nome.value}
+    const mensagem =
+        `Nome: ${nome.value}
 Email: ${email.value} 
-Serviço: ${select.value}, 
+Serviço: ${select.value}
 Especificações: ${msg.value}`
-const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
-window.open(url, "_blank")
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
+    window.open(url, "_blank")
 }
