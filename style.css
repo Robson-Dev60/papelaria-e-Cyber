@@ -14,10 +14,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     min-height: 100%;
     overflow-y: auto;
 }
+
 body {
     background: var(--background);
     font-family: "Dancing Script", cursive;
@@ -81,7 +84,7 @@ header {
 }
 
 p {
-    font-size: 20px;
+    font-size: 30px;
     max-width: 50vw;
     margin: 20px auto 30px;
     color: var(--text);
@@ -99,18 +102,20 @@ a {
     border: var(--text);
     border-radius: 50px;
     font-weight: 600;
-     font-family:"Courier New", Courier, monospace ;
+    font-family: "Courier New", Courier, monospace;
     text-decoration: none;
 }
-.orcamento{
+
+.orcamento {
     margin: 15px 0;
 }
+
 button {
     background: var(--primari);
     width: 25vw;
     height: 8vh;
     border-radius: 50px;
-    font-family:"Courier New", Courier, monospace ;
+    font-family: "Courier New", Courier, monospace;
     font-weight: 600;
 }
 
@@ -139,7 +144,8 @@ button {
     border-radius: 20px;
     border: solid var(--primari);
 }
-#curriculo{
+
+#curriculo {
     background: var(--card);
     display: flex;
     padding: 10px;
@@ -151,6 +157,7 @@ button {
     border-radius: 20px;
     border: solid var(--primari);
 }
+
 h3 {
     font-size: 30px;
     color: var(--secundari);
@@ -176,8 +183,9 @@ h4 {
     height: 8vh;
     border-radius: 50px;
     font-weight: 600;
-    font-size: larger; 
+    font-size: larger;
 }
+
 .saber-mais:hover {
     opacity: 0.8;
     transition: 0.8s;
@@ -207,7 +215,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-   padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 input {
@@ -220,7 +228,7 @@ input {
 }
 
 select {
-    
+
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     border-radius: 25px;
@@ -239,7 +247,7 @@ select {
 
 article p {
     font-size: 25px;
-color: var(--secundari);
+    color: var(--secundari);
 }
 
 footer {
@@ -248,4 +256,99 @@ footer {
     display: block;
     width: 100vw;
     height: 10vh;
+}
+
+
+@media screen and (max-width: 500px) {
+    .title {
+        width: 97vmin;
+        height: 15vh;
+    }
+
+
+
+.tituloDoSite {
+    font-size: 10vmin;
+    padding: 0.5vmin 0;
+
+}
+
+.intro {
+    font-size: 7vmin;
+    width: 80vmin;
+}
+
+.orcamento {
+    font-size: 3vmin;
+    height: 13vmin;
+}
+
+.expli {
+    font-size: 10vmin;
+}
+
+.img-logo {
+  font-size: 11vmin ;
+
+}
+
+#impres-color {
+    width: 97vmin;
+   
+    align-items: center;
+}
+#xerox{
+     width: 97vmin;
+  
+    align-items: center;
+}
+#curriculo{
+     width: 97vmin;
+   
+    align-items: center;
+}  
+h4{
+    margin: 10px;
+font-size: 8vmin;
+
+}
+h3{
+    margin: 10px;
+font-size: 8.5vmin;
+
+}
+.imputs{
+
+       width: 97vmin;
+    align-items: center;
+    font-size: 10vmin;
+}
+p{
+    font-size: 5vmin;
+}
+article, p{
+font-size: 8vmin;
+
+}
+.enviar-pedido{
+width: 19vmin;
+height: auto;
+padding: 1vmin;
+font-size: 3vmin;
+}
+input{
+    width: 40vmin;
+}
+select{
+width: 40vmin;
+
+}
+footer{
+padding: 8px 0;
+height: 50vmin;
+}
+footer p {
+width: 20vmin;
+font-size: 6vmin;
+}
 }
