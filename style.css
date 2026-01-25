@@ -139,7 +139,18 @@ button {
     border-radius: 20px;
     border: solid var(--primari);
 }
-
+#curriculo{
+    background: var(--card);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    margin: 10px auto 20px auto;
+    width: 50vw;
+    min-height: 55vh;
+    height: auto;
+    border-radius: 20px;
+    border: solid var(--primari);
+}
 h3 {
     font-size: 30px;
     color: var(--secundari);
