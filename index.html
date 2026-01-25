@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>papelaria</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1 class="tituloDoSite">&#x1F48C papelaria</h1>
+            </div>
+            <p class="intro">Oferecemos serviços de impressão, elaboração de curriculos e
+                xerox </p>
+            <button class="orcamento" onclick="orcamento()">Solicite um Orçamento</button>
+
+        </header>
+        <section>
+            <h1 class="expli">Nossos Serviços</h1>
+
+            <div class="efect"></div>
+
+            <div id="impres-color">
+                <h1 class="img-logo">&#x1F4C3;</h1>
+                <h3>Impressão Colorida</h3>
+                <p>impressões de alta qualidade para seus trabalhos escolares,
+                    <br> posters ou projetos criativos.
+                </p>
+                <h4>R$2,50/página</h4>
+
+            </div>
+            <div id="xerox">
+                <h1 class="img-logo">&#x1F4DC; </h1>
+                <h3>Xerox</h3>
+                <p>Copías rápidas e de alta qualidade
+                    para documentos e materiais acadêmicos.</p>
+                <h4>R$1,00/página</h4>
+
+            </div>
+
+        </section>
+        <div class="efect"></div>
+        <aside class="txt-intro">
+
+            <h3> Sobre Nossa Papelaria</h3>
+            <p>Tem um projeto especial ou precisa de mais informações?<br>
+                Entre em contato conosco! Estamos atendendo de segunda a Sexta das 8h ás 18h e sabado das 9h as 12h.
+            </p>
+
+            <div class="endereco">
+                <div class="imputs">
+                    <p>Nome Completo</p>
+                    <input id="nome" placeholder="EX:Ana Oliveira">
+                    <p>Email</p>
+                    <input id="email" placeholder="exemple@emai.com">
+                    <p>Serviço de interesse</p>
+
+                    <select name="" id="servico">
+                        <option value="null">Selecione um serviço</option>
+                        <option value="xerox">xerox</option>
+                        <option value="impressao">Impressão</option>
+                        <option value="curriculo">Curriculo</option>
+                        <option value="outro">Outro</option>
+
+                    </select>
+
+                    <div class="outro-serviso">
+                        <p class="pedido">Detalhes do pedido</p>
+                        <input class="msg" placeholder="Como posso ajudar?">
+                    </div>
+                    <button class="enviar-pedido" onclick="mensag()">Enviar Mensagem</button>
+
+                </div>
+            </div>
+
+
+        </aside>
+        <article>
+            <p>Papelaria para todos os seus projetos criativos.</p>
+            <div class="incon"></div>
+        </article>
+        <div class="efect-footer"></div>
+        <footer>
+            <p>agradecemos sempre por tudo.❤</p>
+        </footer>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

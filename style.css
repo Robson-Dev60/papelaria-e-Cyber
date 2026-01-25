@@ -1,0 +1,240 @@
+:root {
+    --primari: #a2c9f0;
+    --secundari: #fb8ea1;
+    --accent: #ffcd6b;
+    --background: #a4deff;
+    --text: #5a4a46;
+    --card: #ffffff;
+    --highlight: #d4ebe9;
+    --success: #a2d5a8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+    overflow-y: auto;
+}
+body {
+    background: var(--background);
+    font-family: "Dancing Script", cursive;
+    color: var(--text);
+    align-items: center;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(#e4ffff 2px, transparent 2px);
+    background-size: 30px 30px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+    height: 100vh;
+}
+
+header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primari);
+}
+
+.title {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background: white;
+    color: #ff7ca8;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+.efect {
+    display: flex;
+    margin: auto;
+    width: 20%;
+    height: 4px;
+    border-radius: 4px;
+    background: linear-gradient(90deg,
+            #a2c9f0,
+            #a2a7f0,
+            #a2aaf0,
+            #a2b4f0,
+            #d18efb,
+            #fb8ee2,
+            #fb8ea1);
+}
+
+.intro {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+    max-width: 50vw;
+    margin: 20px auto 30px;
+    color: var(--text);
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    margin: 15px auto;
+    background: var(--primari);
+    color: var(--text);
+    width: 30vw;
+    height: 8vh;
+    border: var(--text);
+    border-radius: 50px;
+    font-weight: 600;
+     font-family:"Courier New", Courier, monospace ;
+    text-decoration: none;
+}
+.orcamento{
+    margin: 15px 0;
+}
+button {
+    background: var(--primari);
+    width: 25vw;
+    height: 8vh;
+    border-radius: 50px;
+    font-family:"Courier New", Courier, monospace ;
+    font-weight: 600;
+}
+
+#impres-color {
+    background: var(--card);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px auto 20px auto;
+    width: 50vw;
+    min-height: 55vh;
+    height: auto;
+    border-radius: 20px;
+    border: solid var(--primari);
+}
+
+#xerox {
+    background: var(--card);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    margin: 10px auto 20px auto;
+    width: 50vw;
+    min-height: 55vh;
+    height: auto;
+    border-radius: 20px;
+    border: solid var(--primari);
+}
+
+h3 {
+    font-size: 30px;
+    color: var(--secundari);
+}
+
+.expli {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+    color: var(--secundari);
+}
+
+.saber-mais {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    background: var(--primari);
+    color: var(--text);
+    width: 25vw;
+    height: 8vh;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: larger; 
+}
+.saber-mais:hover {
+    opacity: 0.8;
+    transition: 0.8s;
+}
+
+.endereco p {
+    font-size: 30px;
+    color: var(--secundari);
+
+}
+
+.endereco {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.imputs {
+    background: var(--card);
+    border-radius: 25px;
+    width: 50vw;
+    min-height: 55vh;
+    height: auto;
+    border: solid var(--primari);
+    justify-items: baseline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+   padding-bottom: 15px;
+}
+
+input {
+    font-family: "Courier New", Courier, monospace;
+    width: 150px;
+    height: 30px;
+    background: var(--primari);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+select {
+    
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 110px;
+    height: 25px;
+    font-weight: 100;
+    font-size: 15px;
+    background: var(--primari);
+}
+
+.enviar-pedido {
+    margin: 15px 0;
+}
+
+
+
+article p {
+    font-size: 25px;
+color: var(--secundari);
+}
+
+footer {
+    background-color: var(--card);
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 10vh;
+}
