@@ -221,6 +221,10 @@ button.orcamento:hover {
     background: #fff;
 }
 
+.form-container textarea {
+    resize: vertical;
+}
+
 .enviar-pedido {
     background-color: #25D366; /* WhatsApp Green */
     color: white;
@@ -244,7 +248,7 @@ button.orcamento:hover {
 }
 
 .enviar-pedido::before {
-    content: "\f232"; /* FontAwesome WhatsApp Icon */
+    content: "\f232"; /* Icone do WhatsApp */
     font-family: "Font Awesome 6 Brands";
     font-weight: 400;
     font-size: 1.3rem;
