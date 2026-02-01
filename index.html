@@ -1,100 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços de papelaria, impressão, xerox e elaboração de currículos. Solicite seu orçamento online.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Papelaria</title>
+    <title>Papelaria & Cyber</title>
 </head>
 
 <body>
     <div class="container">
         <header>
             <div class="title">
-                <h1 class="tituloDoSite">&#x1F48C papelaria</h1>
+                <h1 class="tituloDoSite"><span aria-hidden="true">💌</span> Papelaria & Cyber</h1>
             </div>
             <p class="intro">Oferecemos serviços de impressão, elaboração de curriculos e
                 xerox </p>
-            <button class="orcamento" onclick="orcamento()">Solicite um Orçamento</button>
+            <button class="orcamento">Solicite um Orçamento</button>
 
         </header>
-        <section>
+        <main>
+        <section class="services-section">
             <h1 class="expli">Nossos Serviços</h1>
 
-            <div class="efect"></div>
+            <div class="services-grid">
+                <div class="service-card" id="impres-color">
+                    <h2 class="img-logo" aria-hidden="true">&#x1F4C3;</h2>
+                    <h3>Impressão Colorida</h3>
+                    <p>Impressões de alta qualidade para seus trabalhos escolares,
+                        posters ou projetos criativos.
+                    </p>
+                    <h4>R$2,50/página</h4>
+                </div>
 
-            <div id="impres-color">
-                <h1 class="img-logo">&#x1F4C3;</h1>
-                <h3>Impressão Colorida</h3>
-                <p>impressões de alta qualidade para seus trabalhos escolares,
-                    <br> posters ou projetos criativos.
-                </p>
-                <h4>R$2,50/página</h4>
+                <div class="service-card" id="xerox">
+                    <h2 class="img-logo" aria-hidden="true">&#x1F4DC;</h2>
+                    <h3>Xerox</h3>
+                    <p>Cópias rápidas e de alta qualidade
+                        para documentos e materiais acadêmicos.</p>
+                    <h4>R$1,00/página</h4>
+                </div>
 
-            </div>
-            <div id="xerox">
-                <h1 class="img-logo">&#x1F4DC; </h1>
-                <h3>Xerox</h3>
-                <p>Copías rápidas e de alta qualidade
-                    para documentos e materiais acadêmicos.</p>
-                <h4>R$1,00/página</h4>
-
-            </div>
-            <div id="curriculo">
-                <h1 class="img-logo">&#x1F4CB;</h1>
-                <h3>Curriculo</h3>
-                <p>Criação e personalização de curriculos.</p>
-                <h4>R$5,00 a R$10,00</h4>
-
-            </div>
-        </section>
-        <div class="efect"></div>
-        <aside class="txt-intro">
-
-            <h3> Sobre Nossa Papelaria</h3>
-            <p>Tem um projeto especial ou precisa de mais informações?<br>
-                Entre em contato conosco! Estamos atendendo de segunda a Sexta das 8h ás 18h e sabado das 9h as 12h.
-            </p>
-
-            <div class="endereco">
-                <div class="imputs">
-                    <p>Nome Completo</p>
-                    <input id="nome" placeholder="EX:Ana Oliveira">
-                    <p>Email</p>
-                    <input id="email" placeholder="exemple@emai.com">
-                    <p>Serviço de interesse</p>
-
-                    <select name="" id="servico">
-                        <option value="null">Selecione um serviço</option>
-                        <option value="xerox">xerox</option>
-                        <option value="impressao">Impressão</option>
-                        <option value="curriculo">Curriculo</option>
-                        <option value="outro">Outro</option>
-
-                    </select>
-
-                    <div class="outro-serviso">
-                        <p class="pedido">Detalhes do pedido</p>
-                        <input class="msg" placeholder="Como posso ajudar?">
-                    </div>
-                    <button class="enviar-pedido" onclick="mensag()">Enviar Mensagem</button>
-
+                <div class="service-card" id="curriculo">
+                    <h2 class="img-logo" aria-hidden="true">&#x1F4CB;</h2>
+                    <h3>Currículo</h3>
+                    <p>Criação e personalização de currículos para destacar seu perfil profissional.</p>
+                    <h4>R$5,00 a R$10,00</h4>
                 </div>
             </div>
+        </section>
 
+        <section id="form-section">
+            <h3>Solicite um Orçamento</h3>
+            <p class="txt-intro">Tem um projeto especial ou precisa de mais informações?<br>
+                Preencha o formulário abaixo e envie seu pedido diretamente para nosso WhatsApp!
+            </p> 
 
-        </aside>
-        <article>
-            <p>Papelaria para todos os seus projetos criativos.</p>
-            <div class="incon"></div>
-        </article>
-        <div class="efect-footer"></div>
+            <form class="form-container">
+                    <label for="nome">Nome Completo</label>
+                    <input id="nome" type="text" placeholder="Ex: Ana Oliveira" required>
+                    
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="exemplo@email.com" required>
+                    
+                    <label for="servico">Serviço de Interesse</label>
+                    <select name="servico" id="servico" required>
+                        <option value="" disabled selected>Selecione um serviço</option>
+                        <option value="xerox">Xerox</option>
+                        <option value="impressao">Impressão Colorida</option>
+                        <option value="curriculo">Elaboração de Currículo</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <label for="msg">Detalhes do pedido</label>
+                    <textarea id="msg" class="msg" rows="4" placeholder="Como podemos ajudar? Ex: Preciso de 10 cópias do meu RG e 5 impressões coloridas em papel A4."></textarea>
+                    
+                    <button type="submit" class="enviar-pedido">Enviar Mensagem via WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
         <footer>
-            <p>agradecemos sempre por tudo.❤</p>
+            <p>Agradecemos a sua preferência! ❤</p>
         </footer>
     </div>
 

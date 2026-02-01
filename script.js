@@ -1,41 +1,44 @@
-
 const nome = document.querySelector("#nome")
 const email = document.querySelector("#email")
 const select = document.querySelector("#servico")
-const msg = document.querySelector(".msg")
+const msg = document.querySelector("#msg")
 const numero = '5599992155967'
+const form = document.querySelector(".form-container")
+const orcamentoBtn = document.querySelector(".orcamento")
 
 
 function orcamento() {
-    document.querySelector(".endereco").scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
+    // O scroll suave agora pode ser feito via CSS com `scroll-behavior: smooth;` no <html>
+    // Mas para garantir compatibilidade e controle, mantemos a função JS.
+    // O clique no botão agora aponta para a seção do formulário.
+    const formSection = document.querySelector("#form-section");
+    formSection.scrollIntoView({ behavior: "smooth", block: "center" });
 }
-/* 
-.scrollIntoView({ ... })
-👉 Executa o scroll até esse elemento.
-O objeto { ... } serve para configurar como o scroll acontece.
-3️⃣ behavior: "smooth"
-👉 Define o tipo de movimento do scroll.
-Opções:
-"auto" → pula direto (padrão)
-"smooth" → desliza suavemente 🧈
-📌 Não muda o destino, só a animação.
-4️⃣ block: "start"
-👉 Controla onde o elemento vai parar na tela (vertical).
-Opções principais:
-"start" → topo da tela ⬆️
-"center" → centro 🟦
-"end" → final ⬇️
-"nearest" → posição mais próxima*/
 
-function mensag() {
+function mensag(event) {
+    event.preventDefault(); // Impede o comportamento padrão de envio do formulário
+
+    // Validação simples para garantir que campos essenciais não estão vazios
+    if (nome.value.trim() === "" || email.value.trim() === "") {
+        alert("Por favor, preencha os campos 'Nome Completo' e 'Email' antes de enviar.");
+        return; // Interrompe a função se a validação falhar
+    }
+
+    if (select.value === "") {
+        alert("Por favor, selecione um serviço de interesse.");
+        return;
+    }
+
     const mensagem =
         `Nome: ${nome.value}
 Email: ${email.value} 
 Serviço: ${select.value}
 Especificações: ${msg.value}`
+
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
     window.open(url, "_blank")
 }
+
+// Adiciona os "escutadores de eventos" para separar o HTML do JavaScript
+orcamentoBtn.addEventListener("click", orcamento);
+form.addEventListener("submit", mensag);

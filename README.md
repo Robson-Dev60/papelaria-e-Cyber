@@ -1,6 +1,6 @@
 # 🖨️ Papelaria & Cyber
 
-> Uma landing page moderna e responsiva para serviços de papelaria, impressão e cyber café, com integração direta para pedidos via WhatsApp.
+> Uma landing page moderna e responsiva para serviços de papelaria e cyber café, com um formulário otimizado para pedidos via WhatsApp.
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -11,17 +11,20 @@
 
 Este projeto é uma página web desenvolvida para facilitar a solicitação de orçamentos e serviços de uma Papelaria e Cyber Café. O foco principal é oferecer uma interface amigável onde o cliente pode selecionar o serviço desejado e enviar as especificações diretamente para o WhatsApp do estabelecimento.
 
-A identidade visual combina o estilo clássico de papelaria (fontes cursivas) com elementos digitais (fontes monoespaçadas), utilizando uma paleta de cores em tons pastéis e gradientes suaves.
+A identidade visual combina o estilo clássico de papelaria (fontes cursivas) com elementos digitais (fontes monoespaçadas), utilizando uma paleta de cores em tons pastéis, sombras suaves e um layout limpo para uma experiência de usuário agradável.
 
 ## ✨ Funcionalidades
 
 -   **Integração com WhatsApp API:** O formulário coleta nome, e-mail, tipo de serviço e especificações, gerando um link automático que abre uma conversa no WhatsApp com a mensagem pré-formatada.
+-   **Validação de Formulário:** Verifica se os campos essenciais (nome, e-mail, serviço) foram preenchidos antes de permitir o envio.
 -   **Design Responsivo:** Layout adaptável para dispositivos móveis (Mobile First) e desktops, com ajustes específicos de tipografia e espaçamento.
--   **Smooth Scroll:** Navegação fluida ao clicar no botão de orçamento, levando o usuário suavemente até a seção de formulário.
+-   **Navegação Suave (Smooth Scroll):** Navegação fluida ao clicar no botão de orçamento, levando o usuário suavemente até a seção de formulário.
+-   **Boas Práticas de Desenvolvimento:**
+    -   **HTML Semântico:** Uso correto de tags como `<main>`, `<section>`, `<form>` e `<label>` para melhor acessibilidade e SEO.
+    -   **Separação de Responsabilidades:** O JavaScript é mantido separado do HTML, utilizando `addEventListener` em vez de atributos `onclick`.
 -   **Estilização Personalizada:**
     -   Uso de **CSS Variables** para fácil manutenção de cores.
-    -   Background com efeito de grade (grid) e gradientes.
-    -   Animações de hover em botões.
+    -   Animações sutis de `hover` e `focus` para uma interface mais interativa.
 
 ## 🎨 Identidade Visual
 
@@ -48,11 +51,11 @@ As fontes utilizadas reforçam a dualidade do negócio:
 ## 📂 Estrutura de Arquivos
 
 ```text
-papelaria-e-Cyber/
+papelaria-e-cyber/
 │
-├── index.html      # Estrutura da página (não fornecido no contexto, mas implícito)
-├── style.css       # Estilos, variáveis de cores e responsividade
-├── script.js       # Lógica de envio para WhatsApp e scroll suave
+├── index.html      # Estrutura semântica da página
+├── style.css       # Estilização moderna, layout e responsividade
+├── script.js       # Lógica de interatividade, validação e envio para WhatsApp
 └── README.md       # Documentação do projeto
 ```
 
