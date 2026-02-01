@@ -265,90 +265,93 @@ footer {
         height: 15vh;
     }
 
+    .tituloDoSite {
+        font-size: 10vmin;
+        padding: 0.5vmin 0;
 
+    }
 
-.tituloDoSite {
-    font-size: 10vmin;
-    padding: 0.5vmin 0;
+    .intro {
+        font-size: 7vmin;
+        width: 80vmin;
+    }
 
-}
+    .orcamento {
+        font-size: 3vmin;
+        height: 13vmin;
+    }
 
-.intro {
-    font-size: 7vmin;
-    width: 80vmin;
-}
+    .expli {
+        font-size: 10vmin;
+    }
 
-.orcamento {
-    font-size: 3vmin;
-    height: 13vmin;
-}
+    .img-logo {
+    font-size: 11vmin ;
 
-.expli {
-    font-size: 10vmin;
-}
+    }
 
-.img-logo {
-  font-size: 11vmin ;
+    #impres-color {
+        width: 97vmin;
+        align-items: center;
+    }
 
-}
+    #xerox {
+        width: 97vmin;
+        align-items: center;
+    }
 
-#impres-color {
-    width: 97vmin;
-   
-    align-items: center;
-}
-#xerox{
-     width: 97vmin;
-  
-    align-items: center;
-}
-#curriculo{
-     width: 97vmin;
-   
-    align-items: center;
-}  
-h4{
-    margin: 10px;
-font-size: 8vmin;
+    #curriculo {
+        width: 97vmin;
+        align-items: center;
+    }
 
-}
-h3{
-    margin: 10px;
-font-size: 8.5vmin;
+    h4 {
+        margin: 10px;
+        font-size: 8vmin;
 
-}
-.imputs{
+    }
 
-       width: 97vmin;
-    align-items: center;
-    font-size: 10vmin;
-}
-p{
-    font-size: 5vmin;
-}
-article, p{
-font-size: 8vmin;
+    h3 {
+        margin: 10px;
+        font-size: 8.5vmin;
+    }
 
-}
-.enviar-pedido{
-width: 19vmin;
-height: auto;
-padding: 1vmin;
-font-size: 3vmin;
-}
-input{
-    width: 40vmin;
-}
-select{
-width: 40vmin;
+    .imputs {
+        width: 97vmin;
+        align-items: center;
+        font-size: 10vmin;
+    }
 
-}
-footer{
-padding: 8px 0;
-height: 50vmin;
-}
-footer p {
-width: 20vmin;
-font-size: 6vmin;
-}
+    p {
+        font-size: 5vmin;
+    }
+
+    article, p {
+        font-size: 8vmin;
+    }
+
+    .enviar-pedido {
+        width: 19vmin;
+        height: auto;
+        padding: 1vmin;
+        font-size: 3vmin;
+    }
+
+    input {
+        width: 40vmin;
+    }
+
+    select {
+        width: 40vmin;
+    }
+
+    footer {
+        padding: 8px 0;
+        height: 50vmin;
+    }
+
+    footer p {
+        width: 20vmin;
+        font-size: 6vmin;
+    }
 }
