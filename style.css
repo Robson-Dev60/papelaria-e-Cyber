@@ -223,6 +223,7 @@ button.orcamento:hover {
 
 .form-container textarea {
     resize: vertical;
+    max-width: 100%;
 }
 
 .enviar-pedido {
