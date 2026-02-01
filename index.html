@@ -7,7 +7,8 @@
     <meta name="description" content="Serviços de papelaria, impressão, xerox e elaboração de currículos. Solicite seu orçamento online.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./style.css">
     <title>Papelaria & Cyber</title>
 </head>
@@ -16,10 +17,9 @@
     <div class="container">
         <header>
             <div class="title">
-                <h1 class="tituloDoSite"><span aria-hidden="true">💌</span> Papelaria & Cyber</h1>
+                <h1 class="tituloDoSite"><i class="fa-solid fa-paper-plane"></i> Papelaria & Cyber</h1>
             </div>
-            <p class="intro">Oferecemos serviços de impressão, elaboração de curriculos e
-                xerox </p>
+            <p class="intro">Soluções completas em impressão, digitalização e serviços administrativos.</p>
             <button class="orcamento">Solicite um Orçamento</button>
 
         </header>
@@ -29,7 +29,7 @@
 
             <div class="services-grid">
                 <div class="service-card" id="impres-color">
-                    <h2 class="img-logo" aria-hidden="true">&#x1F4C3;</h2>
+                    <div class="icon-box"><i class="fa-solid fa-print"></i></div>
                     <h3>Impressão Colorida</h3>
                     <p>Impressões de alta qualidade para seus trabalhos escolares,
                         posters ou projetos criativos.
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="service-card" id="xerox">
-                    <h2 class="img-logo" aria-hidden="true">&#x1F4DC;</h2>
+                    <div class="icon-box"><i class="fa-solid fa-copy"></i></div>
                     <h3>Xerox</h3>
                     <p>Cópias rápidas e de alta qualidade
                         para documentos e materiais acadêmicos.</p>
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="service-card" id="curriculo">
-                    <h2 class="img-logo" aria-hidden="true">&#x1F4CB;</h2>
+                    <div class="icon-box"><i class="fa-solid fa-file-lines"></i></div>
                     <h3>Currículo</h3>
                     <p>Criação e personalização de currículos para destacar seu perfil profissional.</p>
                     <h4>R$5,00 a R$10,00</h4>
@@ -56,8 +56,7 @@
 
         <section id="form-section">
             <h3>Solicite um Orçamento</h3>
-            <p class="txt-intro">Tem um projeto especial ou precisa de mais informações?<br>
-                Preencha o formulário abaixo e envie seu pedido diretamente para nosso WhatsApp!
+            <p class="txt-intro">Precisa de agilidade? Preencha o formulário e inicie seu atendimento via WhatsApp agora mesmo.
             </p> 
 
             <form class="form-container">
