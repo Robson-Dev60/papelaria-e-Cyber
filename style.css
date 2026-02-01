@@ -39,9 +39,9 @@ h1, h2, h3, h4 {
 
 /* Header */
 header {
+    background-image: url(./img/papelaria.png);
     padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #ffffff 0%, #f4f6f7 100%);
     border-bottom: 1px solid rgba(0,0,0,0.05);
     margin-bottom: 40px;
 }
@@ -58,6 +58,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    
 }
 
 .tituloDoSite i {
