@@ -1,11 +1,11 @@
 :root {
-    --primary: #2c3e50;       /* Azul Marinho Profundo - Sofisticação */
+    --primary: #101d2a;       /* Azul Marinho Profundo - Sofisticação */
     --secondary: #e67e22;     /* Bronze/Laranja - Destaque elegante */
     --accent: #3498db;        /* Azul Vibrante - Tecnologia */
     --background: #f4f6f7;    /* Cinza Gelo - Limpeza */
     --surface: #ffffff;       /* Branco Puro */
     --text: #2c3e50;          /* Texto Escuro */
-    --text-light: #7f8c8d;    /* Texto Cinza Suave */
+    --text-light: #292a2a;    /* Texto Cinza Suave */
     --border-radius: 12px;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
@@ -40,9 +40,11 @@ h1, h2, h3, h4 {
 /* Header */
 header {
     background-image: url(./img/papelaria.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 80px 20px;
     text-align: center;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
     margin-bottom: 40px;
 }
 
