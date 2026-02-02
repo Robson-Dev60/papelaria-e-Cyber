@@ -270,18 +270,89 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+    .tituloDoSite {
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        padding: 60px 15px;
+        background-size: cover; /* Garante que o fundo cubra a altura extra gerada pela quebra de linha */
+    }
+
     .tituloDoSite {
         font-size: 2.5rem;
         flex-direction: column;
+        text-align: center;
+    }
+    
+    .intro {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    .expli {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
     }
     
     #form-section {
         padding: 30px 20px;
         margin: 40px 20px;
     }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
+}
+
+@media (max-width: 480px) {
+    .tituloDoSite {
+        font-size: 2rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    button.orcamento {
+        width: 100%; /* Botão full width facilita o clique em telas pequenas */
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .expli {
+        font-size: 1.75rem;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    #form-section {
+        margin: 30px 10px;
+        padding: 25px 15px;
+    }
+
+    #form-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+        padding: 12px;
+        font-size: 0.95rem;
     }
 }
