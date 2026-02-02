@@ -269,7 +269,8 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-/* Responsive */
+/* -----Responsividade----- */
+
 @media (max-width: 992px) {
     .tituloDoSite {
         font-size: 3rem;
