@@ -1,10 +1,10 @@
 :root {
-    --primary: #101d2a;       /* Azul Marinho Profundo - Sofisticação */
+    --primary: #094f94;       /* Azul Marinho Profundo - Sofisticação */
     --secondary: #e67e22;     /* Bronze/Laranja - Destaque elegante */
-    --accent: #3498db;        /* Azul Vibrante - Tecnologia */
-    --background: #f4f6f7;    /* Cinza Gelo - Limpeza */
-    --surface: #ffffff;       /* Branco Puro */
-    --text: #2c3e50;          /* Texto Escuro */
+    --accent: #094f94;        /* Azul Vibrante - Tecnologia */
+    --background: #fbddbb;    /* Cinza Gelo - Limpeza */
+    --surface: #fdedda;       /* Branco Puro */
+    --text: #0c1e30;          /* Texto Escuro */
     --text-light: #292a2a;    /* Texto Cinza Suave */
     --border-radius: 12px;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -16,8 +16,10 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--background);
+body {background-image: url(./img/parchment.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat;
     font-family: 'Open Sans', sans-serif;
     color: var(--text);
     line-height: 1.6;
@@ -39,8 +41,8 @@ h1, h2, h3, h4 {
 
 /* Header */
 header {
-    background-image: url(./img/papelaria.png);
-    background-size: cover;
+    background-image: url(./img/pencils-fundo.png);
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     padding: 80px 20px;
