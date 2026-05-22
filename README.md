@@ -91,7 +91,7 @@ O CSS inclui media queries robustas para telas menores que 500px, ajustando:
 Desenvolvido com carinho e código.
 
 [!LinkedIn](https://www.linkedin.com/in/seu-linkedin) 
-[!GitHub](https://github.com/seu-github)
+[!GitHub](https://github.com/Robson-Dev60)
 
 ---
 *Este projeto é para fins de estudo e portfólio.*
